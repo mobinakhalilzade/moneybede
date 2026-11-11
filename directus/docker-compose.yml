@@ -1,0 +1,17 @@
+services:
+  directus:
+    image: directus/directus:latest
+    ports:
+      - "8055:8055"
+    volumes:
+      - ./database:/directus/database
+      - ./uploads:/directus/uploads
+      - ./extensions:/directus/extensions
+    environment:
+      SECRET: "put-a-long-random-string-here"
+      ADMIN_EMAIL: "mobinakhalilzadehs@gmail.com"
+      ADMIN_PASSWORD: "33164721"
+      DB_CLIENT: "sqlite3"
+      DB_FILENAME: "/directus/database/data.db"
+      CORS_ENABLED: "true"
+      CORS_ORIGIN: "http://localhost:4200"

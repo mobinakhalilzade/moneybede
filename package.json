@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@directus/sdk": "^27.1.0",
+    "directus": "^12.6.1",
+    "sqlite3": "^6.0.1"
+  }
+}
